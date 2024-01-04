@@ -8,6 +8,17 @@ Tài liệu tham khảo:
   - wpbeginner.com : https://www.wpbeginner.com/
   - Turorials Point : https://www.tutorialspoint.com/wordpress/index.htm
 ---------------Buổi 2---------------
+Cách cài đặt project wordpress 
+Cách cài đặt xampp 
+Cấu hình vhost: C:\xampp\apache\conf\extra\httpd-vhosts.conf
+    <VirtualHost *:80>
+      DocumentRoot "C:/apps/demo"
+      ServerName demo.local 
+      <Directory "C:/apps/demo">
+        Require all granted
+      </Directory>
+    </VirtualHost>
+Cấu hình tên miền ảo: C:\Windows\System32\drivers\etc\hosts
 
 ---------------Buổi 3---------------
 ---------------Buổi 4---------------
