@@ -14,15 +14,37 @@ Cấu hình vhost: C:\xampp\apache\conf\extra\httpd-vhosts.conf
     <VirtualHost *:80>
       DocumentRoot "C:/apps/demo"
       ServerName demo.local 
+      ErrorLog "C:/apps/logs/demo-error.log"
       <Directory "C:/apps/demo">
         Require all granted
       </Directory>
     </VirtualHost>
 Cấu hình tên miền ảo: C:\Windows\System32\drivers\etc\hosts
-
+Cách cài đặt plugin: Query Monitor(debug php)
+Cách cài đặt theme
 ---------------Buổi 3---------------
+Cài các plugin cho project:
+  + Query Monitor
+  + Giới thiệu các mục chức năng trong wordpress
+  + CRUD trong wp
 ---------------Buổi 4---------------
+Tổng quan về cách tạo mục cho dự án wp: 
+  + Custom post type : post, page, custom post: dịch vụ , custom post: sản phẩm => dịch vụ, tin tức, sản phẩm 
+  + Custom taxonomy : category , tag , Custom taxonomy danh mục sp
+  + Attachment 
+  + Comment 
+  + User
+Giới thiệu về cấu trúc database trong wp:
+  + wp_post : danh sách các bài post 
+  + wp_postmeta: thuộc tính của bài post
+  + wp_terms: tên , slug 
+  + wp_term_taxonomy: taxonomy, desc, parent
+  + wp_term_raletionship: bảng trung gian lưu quan hệ n-n (wp_posts vs wp_term_taxonomy)
+  + Relationship trong sql: 1-1 , 1-n, n-n
 ---------------Buổi 5---------------
+Lập trình theme wordpress
+Thực hành xây dựng website tin tức bằng wordpress
+
 ---------------Buổi 6---------------
 ---------------Buổi 7---------------
 ---------------Buổi 8---------------
