@@ -16,11 +16,12 @@ Cấu hình vhost: C:\xampp\apache\conf\extra\httpd-vhosts.conf
       ServerName demo.local 
       ErrorLog "C:/apps/logs/demo-error.log"
       <Directory "C:/apps/demo">
+        AllowOverride All
         Require all granted
       </Directory>
     </VirtualHost>
 Cấu hình tên miền ảo: C:\Windows\System32\drivers\etc\hosts
-Cách cài đặt plugin: Query Monitor(debug php)
+Cách cài đặt plugin: Query Monitor(debug php), Classic Editor(trình soạn thảo cũ)
 Cách cài đặt theme
 ---------------Buổi 3---------------
 Cài các plugin cho project:
@@ -44,8 +45,27 @@ Giới thiệu về cấu trúc database trong wp:
 ---------------Buổi 5---------------
 Lập trình theme wordpress
 Thực hành xây dựng website tin tức bằng wordpress
-
+Hàm sử dụng trong theme: 
+  + get_theme_file_uri('') : Hàm lấy đường dẫn tuyệt đối
+  + is_home() : kiểm tra có phải trang chủ hông
 ---------------Buổi 6---------------
+Lập trình theme wordpress(tt)
+Template Tag và các hàm thường dùng
+  + Hook: móc
+     + action: khoảng trống đưa code vào chạy
+     + filter: sửa đổi code
+Main Query: truy vấn nền sẵn có, chỉ cần viết theme ra sài thôi 
+Các template tag thường dùng 
+  + the_title()
+  + the_content()
+  + the_category()
+  + the_ID()
+  + the_excerpt()
+  + the_author()
+  + the_date() => get_the_date()
+  + the_pernalink()
+
+
 ---------------Buổi 7---------------
 ---------------Buổi 8---------------
 ---------------Buổi 9---------------
