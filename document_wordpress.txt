@@ -64,10 +64,13 @@ Các template tag thường dùng
   + the_author()
   + the_date() => get_the_date()
   + the_pernalink()
-
-
+Lập trình OOP trong wordpress
 ---------------Buổi 7---------------
+Thực hành theme Revolve
+Viết functions hook cho style và script
+Cài plugin FakerPress
 ---------------Buổi 8---------------
+Thực hành ghép giao diện trang revolve
 ---------------Buổi 9---------------
 ---------------Buổi 10---------------
 ---------------Buổi 11---------------

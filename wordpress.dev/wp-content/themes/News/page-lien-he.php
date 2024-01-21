@@ -1,12 +1,14 @@
 <?php get_header(); ?>
+<?php while(have_posts()): ?>
+    <?php the_post(); ?>
 <!-- Page Header-->
 <header class="masthead" style="background-image: url('<?php echo get_theme_file_uri('assets/img/contact-bg.jpg') ?>')">
     <div class="container position-relative px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <div class="page-heading">
-                    <h1>Contact Me</h1>
-                    <span class="subheading">Have questions? I have answers.</span>
+                    <h1><?php the_title(); ?></h1>
+                    <span class="subheading">This is what I do.</span>
                 </div>
             </div>
         </div>
@@ -17,7 +19,7 @@
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
-                <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
+                <?php the_content(); ?>
                 <div class="my-5">
                     <!-- * * * * * * * * * * * * * * *-->
                     <!-- * * SB Forms Contact Form * *-->
@@ -76,4 +78,5 @@
         </div>
     </div>
 </main>
+<?php endwhile; ?>
 <?php get_footer(); ?>
